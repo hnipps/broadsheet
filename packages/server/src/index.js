@@ -17,12 +17,10 @@ app.get('/', (req, res) => {
     'https://blog.prototypr.io/simplify-styling-with-functional-css-7b3e4edc2243'
   )
     .then(html => {
-      //success!
-      console.log(html);
+      // Success!
       res.send(html);
     })
     .catch(err => {
-      console.error(err);
       res.send(err);
     });
 });
