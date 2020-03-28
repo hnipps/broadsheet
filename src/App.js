@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 
@@ -47,7 +46,7 @@ class App extends Component {
     const { textContent, parsedArticle } = this.state;
     return (
       <div className="App">
-        {parsedArticle.content}
+        <div className="dangerous" dangerouslySetInnerHTML={{ __html: parsedArticle.content }} />
         <p className="text-content">{textContent}</p>
       </div>
     );

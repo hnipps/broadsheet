@@ -11,3 +11,8 @@
   column-rule-width: 1rem;
   column-gap: 1rem;
 }
+
+.dangerous p {
+  column-count: 3;
+  text-align: left;
+}
